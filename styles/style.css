@@ -12,3 +12,7 @@ table {
 th {
     border: 2px solid black;
 }
+
+#upper {
+    height: 175px;
+}

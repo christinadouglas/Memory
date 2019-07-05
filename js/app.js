@@ -18,7 +18,7 @@ const fourOfHearts = new Hearts(4);
 const fiveOfHearts = new Hearts(5);
 const sixOfHearts = new Hearts(6);
 const sevenOfHearts = new Hearts(7);
-const eigthOfHearts = new Hearts(8);
+const eightOfHearts = new Hearts(8);
 const nineOfHearts = new Hearts(9);
 const tenOfHearts = new Hearts(10);
 const jackOfHearts = new Hearts(10);
@@ -27,10 +27,49 @@ const kingOfHearts = new Hearts(10);
 const aceOfHearts = new Hearts(1 && 11);
 
 const hearts = [twoOfHearts, threeOfHearts, fourOfHearts, 
-fiveOfHearts, sixOfHearts, sevenOfHearts, eigthOfHearts, nineOfHearts, 
+fiveOfHearts, sixOfHearts, sevenOfHearts, eightOfHearts, nineOfHearts, 
 tenOfHearts, jackOfHearts, queenOfHearts, kingOfHearts, aceOfHearts];
 
 console.log(hearts);
+
+twoOfHeartsDiv = document.querySelector("#twoH");
+twoOfHeartsDiv = twoOfHearts;
+
+threeOfHeartsDiv = document.querySelector("#threeH");
+threeOfHeartsDiv = threeOfHearts;
+
+fourOfHeartsDiv = document.querySelector("#fourH");
+fourOfHeartsDiv = fourOfHearts;
+
+fiveOfHeartsDiv = document.querySelector("#fiveH");
+fiveOfHeartsDiv = fiveOfHearts;
+
+sixOfHeartsDiv = document.querySelector("#sixH");
+sixOfHeartsDiv = sixOfHearts;
+
+sevenOfHeartsDiv = document.querySelector("#sevenH");
+sevenOfHeartsDiv = sevenOfHearts;
+
+eightOfHeartsDiv = document.querySelector("#eightH");
+eightOfHeartsDiv = eightOfHearts;
+
+nineOfHeartsDiv = document.querySelector("#nineH");
+nineOfHeartsDiv = nineOfHearts;
+
+tenOfHeartsDiv = document.querySelector("#tenH");
+tenOfHeartsDiv = tenOfHearts;
+
+jackOfHeartsDiv = document.querySelector("#jackH");
+jackOfHeartsDiv = jackOfHearts;
+
+queenOfHeartsDiv = document.querySelector("#queenH");
+queenOfHeartsDiv = queenOfHearts;
+
+kingOfHeartsDiv = document.querySelector("#kingH");
+kingOfHeartsDiv = kingOfHearts;
+
+aceOfHeartsDiv = document.querySelector("#aceH");
+aceOfHeartsDiv = aceOfHearts;
 
 class Diamonds extends Cards {
     constructor(number, suit) {
@@ -59,6 +98,46 @@ nineOfDiamonds, tenOfDiamonds, jackOfDiamonds, queenOfDiamonds,
 kingOfDiamonds, aceOfDiamonds];
     
 console.log(diamonds);
+
+twoOfDiamondsDiv = document.querySelector("#twoS");
+twoOfDiamondsDiv = twoOfDiamonds;
+
+threeOfDiamondsDiv = document.querySelector("#threeS");
+threeOfDiamondsDiv = threeOfDiamonds;
+
+fourOfDiamondsDiv = document.querySelector("#fourS");
+fourOfDiamondsDiv = fourOfDiamonds;
+
+fiveOfDiamondsDiv = document.querySelector("#fiveS");
+fiveOfDiamondsDiv = fiveOfDiamonds;
+
+sixOfDiamondsDiv = document.querySelector("#sixS");
+sixOfDiamondsDiv = sixOfDiamonds;
+
+sevenOfDiamondsDiv = document.querySelector("#sevenS");
+sevenOfDiamondsDiv = sevenOfDiamonds;
+
+eightOfDiamondsDiv = document.querySelector("#twoS");
+eightOfDiamondsDiv = eightOfDiamonds;
+
+nineOfDiamondsDiv = document.querySelector("#nineS");
+nineOfDiamondsDiv = nineOfDiamonds;
+
+tenOfDiamondsDiv = document.querySelector("#tenS");
+tenOfDiamondsDiv = tenOfDiamonds;
+
+jackOfDiamondsDiv = document.querySelector("#jackS");
+jackOfDiamondsDiv = jackOfDiamonds;
+
+queenOfDiamondsDiv = document.querySelector("#queenS");
+queenOfDiamondsDiv = queenOfDiamonds;
+
+kingOfDiamondsDiv = document.querySelector("#kingS");
+kingOfDiamondsDiv = kingOfDiamonds;
+
+aceOfDiamondsDiv = document.querySelector("#aceS");
+aceOfDiamondsDiv = aceOfDiamonds;
+
 
 class Clubs extends Cards {
     constructor(number, suit) {
@@ -119,20 +198,21 @@ reshufflePile.push(visibleCard);
 console.log(visibleCard);
 console.log(reshufflePile);
 
-function matchHearts() {
-    if (2 ===2 && hearts) {
-    }
-    if (3 = 3 && hearts) {
+// function matchHearts() {
+//     if (hearts && number ===2) {
+//     }
+//     if (hearts && number ===3) {
 
-    }
-    if (4 ===4 && hearts) {
-    }
-    if (2 ===2 && hearts) {
+//     }
+//     if (hearts && number ===5) {
+//     }
+//     if (hearts && number ===5) {
+//     }
     
 
-}
-function pickCard() {
-}
+// }
+// function pickCard() {
+// }
 
 
 
