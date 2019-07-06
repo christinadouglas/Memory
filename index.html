@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Varela&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <h1>Solitaire</h1>
+    <label>Timer:</label>
+    <span>00:00</span>
+    <label>Moves:</label>
+    <span>0</span>
+    <label id="score">Score:</label>
+    <span id= "count">0</span>
     <img id="back" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">
     <img id="backOne" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">
     <img id="backTwo" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">
@@ -22,68 +29,10 @@
     <img id="backFive" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">
     <img id="backSix" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">
     <img id="backSeven" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">
-    <img id="backDiamonds" src="data:image/jpeg;base64,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">
-    <!-- <img id="backHearts" src="<img id="back" src="https://i.pinimg.com/236x/6c/a0/16/6ca016115a894f69dea75cc80f95ad92--game-cards-card-games.jpg">"> -->
-    <div class="hearts">
-        <div id="twoH"></div>
-        <div id="threeH"></div>
-        <div id="fourH"></div>
-        <div id="fiveH"></div>
-        <div id="sixH"></div>
-        <div id="sevenH"></div>
-        <div id="eightH"></div>
-        <div id="nineH"></div>
-        <div id="tenH"></div>
-        <div id="jackH"></div>
-        <div id="queenH"></div>
-        <div id="kingH"></div>
-        <div id="aceH"></div>
-    </div>
-    <div class="spades">
-        <div id="twoS"></div>
-        <div id="threeS"></div>
-        <div id="fourS"></div>
-        <div id="fiveS"></div>
-        <div id="sixS"></div>
-        <div id="sevenS"></div>
-        <div id="eightS"></div>
-        <div id="nineS"></div>
-        <div id="tenS"></div>
-        <div id="jackS"></div>
-        <div id="queenS"></div>
-        <div id="kingS"></div>
-        <div id="aceS"></div>
-    </div>
-    <div class="clubs">
-        <div id="twoC"></div>
-        <div id="threeC"></div>
-        <div id="fourC"></div>
-        <div id="fiveC"></div>
-        <div id="sixC"></div>
-        <div id="sevenC"></div>
-        <div id="eightC"></div>
-        <div id="nineC"></div>
-        <div id="tenC"></div>
-        <div id="jackC"></div>
-        <div id="queenC"></div>
-        <div id="kingC"></div>
-        <div id="aceC"></div>
-    </div>
-    <div class="diamonds">
-        <div id="twoD"></div>
-        <div id="threeD"></div>
-        <div id="fourD"></div>
-        <div id="fiveD"></div>
-        <div id="sixD"></div>
-        <div id="sevenD"></div>
-        <div id="eightD"></div>
-        <div id="nineD"></div>
-        <div id="tenD"></div>
-        <div id="jackD"></div>
-        <div id="queenD"></div>
-        <div id="kingD"></div>
-        <div id="aceD"></div>
-    </div>
+    <img id="cornerCard" src="https://i.ibb.co/bKQPvvx/purple-back.jpg">
+    <img id="cornerCardTwo" src="https://i.ibb.co/bKQPvvx/purple-back.jpg">
+    <img id="cornerCardThree" src="https://i.ibb.co/bKQPvvx/purple-back.jpg">
+    <img id="cornerCardFour" src="https://i.ibb.co/bKQPvvx/purple-back.jpg">
     <table>
         <tr id ="upper">
                 <th scope="col" id="oneUpper"></th>
@@ -104,6 +53,58 @@
             <th scope="col" id="seven"></th>
         </tr>
     </table>
+    <img id="QS" src="https://i.ibb.co/KhmygSk/QS.jpg">
+    <img id ="QH" src="https://i.ibb.co/qNgJzP5/QH.jpg">
+    <img id="QD" src="https://i.ibb.co/XCgZZgs/QD.jpg">
+    <img id="QC" src="https://i.ibb.co/26c3Tpv/QC.jpg">
+    <img id="KS" src="https://i.ibb.co/4Y1cbPg/KS.jpg">
+    <img id="KH" src="https://i.ibb.co/PT67Rgm/KH.jpg">
+    <img id="KD" src="https://i.ibb.co/2YKYv4D/KD.jpg">
+    <img id="KC" src="https://i.ibb.co/XCcM0yH/KC.jpg">
+    <img id="JS" src="https://i.ibb.co/vXJBtfx/JS.jpg">
+    <img id="JH" src="https://i.ibb.co/yN2fBzc/JH.jpg">
+    <img id="JD" src="https://i.ibb.co/QMv2q5T/JD.jpg">
+    <img id="JC" src="https://i.ibb.co/9tCSD9P/JC.jpg">
+    <img id="AS" src="https://i.ibb.co/jksHtgB/AS.jpg">
+    <img id="AH" src="https://i.ibb.co/0hBs1LY/AH.jpg">
+    <img id="AD" src="https://i.ibb.co/MPZCgcT/AD.jpg">
+    <img id="AC" src="https://i.ibb.co/WWPNKgy/AC.jpg">
+    <img id="tenH" src="https://i.ibb.co/x3bTxfg/10H.jpg">
+    <img id="tenS" src="https://i.ibb.co/tq4b345/10S.jpg">
+    <img id="tenC" src="https://i.ibb.co/5LS15dm/10C.jpg">
+    <img id="tenD" src="https://i.ibb.co/yB0pd2L/10D.jpg">
+    <img id="nineS" src="https://i.ibb.co/3MPJfnD/9S.jpg">
+    <img id="nineH" src="https://i.ibb.co/jWwPD9W/9H.jpg">
+    <img id="nineD" src="https://i.ibb.co/PrMb6Mq/9D.jpg">
+    <img id="nineC" src="https://i.ibb.co/TYy9H22/9C.jpg">
+    <img id="eightS" src="https://i.ibb.co/Wp7fdTN/8S.jpg">
+    <img id="eightH" src="https://i.ibb.co/QjvZVJC/8H.jpg">
+    <img id="eightC" src="https://i.ibb.co/GHdgRzv/8C.jpg">
+    <img id="eightD" src="https://i.ibb.co/9HbtWmy/8D.jpg">
+    <img id="sevenH" src="https://i.ibb.co/KNFdg11/7H.jpg">
+    <img id="sevenS" src="https://i.ibb.co/TYpd4MZ/7S.jpg">
+    <img id="sevenC" src="https://i.ibb.co/jD6hGVH/7C.jpg">
+    <img id="sevenD" src="https://i.ibb.co/sVTqx6L/7D.jpg">
+    <img id="sixH" src="https://i.ibb.co/XJ6D87z/6H.jpg">
+    <img id="sixS" src="https://i.ibb.co/c22M5qZ/6S.jpg">
+    <img id="sixD" src="https://i.ibb.co/Kyx4ddT/6D.jpg">
+    <img id="sixC" src="https://i.ibb.co/vwc09P0/6C.jpg">
+    <img id="fiveS" src="https://i.ibb.co/jZx57LV/5S.jpg">
+    <img id="fiveH" src="https://i.ibb.co/fqzVh1q/5H.jpg">
+    <img id="fiveD" src="https://i.ibb.co/0Gp2gcY/5D.jpg">
+    <img id="fiveC" src="https://i.ibb.co/qy7gVts/5C.jpg">
+    <img id="fourS" src="https://i.ibb.co/4p7dn2w/4S.jpg">
+    <img id="fourH" src="https://i.ibb.co/S55mf3J/4H.jpg">
+    <img id="fourD" src="https://i.ibb.co/tcYkmBC/4D.jpg">
+    <img id="fourC" src="https://i.ibb.co/vYPw3kN/4C.jpg">
+    <img id="threeH" src="https://i.ibb.co/1Gdkt3L/3H.jpg">
+    <img id="threeS" src="https://i.ibb.co/fXh92Yh/3S.jpg">
+    <img id="threeC" src="https://i.ibb.co/1TxDLmg/3C.jpg">
+    <img id="threeD" src="https://i.ibb.co/tDb01FN/3D.jpg">
+    <img id="twoS" src="https://i.ibb.co/zHFjX2B/2S.jpg">
+    <img id="twoH" src="https://i.ibb.co/PY52MtY/2H.jpg">
+    <img id="twoC" src="https://i.ibb.co/GQ3pqRj/2C.jpg">
+    <img id="twoD" src="https://i.ibb.co/z76tRCF/2D.jpg">
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -30,45 +30,6 @@ const hearts = [twoOfHearts, threeOfHearts, fourOfHearts,
 fiveOfHearts, sixOfHearts, sevenOfHearts, eightOfHearts, nineOfHearts, 
 tenOfHearts, jackOfHearts, queenOfHearts, kingOfHearts, aceOfHearts];
 
-twoOfHeartsDiv = document.querySelector("#twoH");
-twoOfHeartsDiv = hearts[0];
-
-threeOfHeartsDiv = document.querySelector("#threeH");
-threeOfHeartsDiv = hearts[1];
-
-fourOfHeartsDiv = document.querySelector("#fourH");
-fourOfHeartsDiv = hearts[2];
-
-fiveOfHeartsDiv = document.querySelector("#fiveH");
-fiveOfHeartsDiv = hearts[3];
-
-sixOfHeartsDiv = document.querySelector("#sixH");
-sixOfHeartsDiv = hearts[4];
-
-sevenOfHeartsDiv = document.querySelector("#sevenH");
-sevenOfHeartsDiv = hearts[5];
-
-eightOfHeartsDiv = document.querySelector("#eightH");
-eightOfHeartsDiv = hearts[6];
-
-nineOfHeartsDiv = document.querySelector("#nineH");
-nineOfHeartsDiv = hearts[7];
-
-tenOfHeartsDiv = document.querySelector("#tenH");
-tenOfHeartsDiv = hearts[8];
-
-jackOfHeartsDiv = document.querySelector("#jackH");
-jackOfHeartsDiv = hearts[9];
-
-queenOfHeartsDiv = document.querySelector("#queenH");
-queenOfHeartsDiv = hearts[10];
-
-kingOfHeartsDiv = document.querySelector("#kingH");
-kingOfHeartsDiv = hearts[11];
-
-aceOfHeartsDiv = document.querySelector("#aceH");
-aceOfHeartsDiv = hearts[12];
-
 class Diamonds extends Cards {
     constructor(number, suit) {
         super(number, suit);
@@ -95,50 +56,6 @@ fiveOfDiamonds, sixOfDiamonds, sevenOfDiamonds, eightOfDiamonds,
 nineOfDiamonds, tenOfDiamonds, jackOfDiamonds, queenOfDiamonds,
 kingOfDiamonds, aceOfDiamonds];
 
-twoOfDiamondsDiv = document.querySelector("#twoD");
-twoOfDiamondsDiv = diamonds[0];
-
-threeOfDiamondsDiv = document.querySelector("#threeD");
-threeOfDiamondsDiv = diamonds[1];
-
-fourOfDiamondsDiv = document.querySelector("#fourD");
-fourOfDiamondsDiv = diamonds[2];
-
-fiveOfDiamondsDiv = document.querySelector("#fiveD");
-fiveOfDiamondsDiv = diamonds[3];
-
-sixOfDiamondsDiv = document.querySelector("#sixD");
-sixOfDiamondsDiv = diamonds[4];
-
-sevenOfDiamondsDiv = document.querySelector("#sevenD");
-sevenOfDiamondsDiv = diamonds[5];
-
-eightOfDiamondsDiv = document.querySelector("#twoD");
-eightOfDiamondsDiv = diamonds[6];
-
-nineOfDiamondsDiv = document.querySelector("#nineD");
-nineOfDiamondsDiv = diamonds[7];
-
-tenOfDiamondsDiv = document.querySelector("#tenD");
-tenOfDiamondsDiv = diamonds[8];
-
-jackOfDiamondsDiv = document.querySelector("#jackD");
-jackOfDiamondsDiv = diamonds[9];
-
-queenOfDiamondsDiv = document.querySelector("#queenD");
-queenOfDiamondsDiv = diamonds[10];
-
-kingOfDiamondsDiv = document.querySelector("#kingD");
-kingOfDiamondsDiv = diamonds[11];
-
-aceOfDiamondsDiv = document.querySelector("#aceD");
-aceOfDiamondsDiv = diamonds[12];
-
-// const diamondsDiv = [twoOfDiamondsDiv, threeOfDiamondsDiv, fourOfDiamondsDiv,
-//     fiveOfDiamondsDiv, sixOfDiamondsDiv, sevenOfDiamondsDiv, eightOfDiamondsDiv, 
-//     nineOfDiamondsDiv, tenOfDiamondsDiv, jackOfDiamondsDiv, queenOfDiamondsDiv,
-//     kingOfDiamondsDiv, aceOfDiamondsDiv];
-
 class Clubs extends Cards {
     constructor(number, suit) {
         super(number, suit);
@@ -163,45 +80,6 @@ const aceOfClubs = new Clubs(1  && 11);
 const clubs = [twoOfClubs, threeOfClubs, fourOfClubs, fiveOfClubs, 
 sixOfClubs, sevenOfClubs, eigthOfClubs, nineOfClubs, tenOfClubs, 
 jackOfClubs, queenOfClubs, kingOfClubs, aceOfClubs];
-
-twoOfClubsDiv = document.querySelector("#twoC");
-twoOfClubsDiv = clubs[0];
-
-threeOfClubsDiv = document.querySelector("#threeC");
-threeOfClubsDiv = clubs[1];
-
-fourOfClubsDiv = document.querySelector("#fourC");
-fourOfClubsDiv = clubs[2];
-
-fiveOfClubsDiv = document.querySelector("#fiveC");
-fiveOfClubsDiv = clubs[3];
-
-sixOfClubsDiv = document.querySelector("#sixC");
-sixOfClubsDiv = clubs[4];
-
-sevenOfClubsDiv = document.querySelector("#sevenC");
-sevenOfClubsDiv = clubs[5];
-
-eightOfClubsDiv = document.querySelector("#eightC");
-eightOfClubsDiv = clubs[6];
-
-nineOfClubsDiv = document.querySelector("#nineC");
-nineOfClubsDiv = clubs[7];
-
-tenOfClubsDiv = document.querySelector("#tenC");
-tenOfClubsDiv = clubs[8];
-
-jackOfClubsDiv = document.querySelector("#jackC");
-jackOfClubsDiv = clubs[9];
-
-queenOfClubsDiv = document.querySelector("#queenC");
-queenOfClubsDiv = clubs[10];
-
-kingOfClubsDiv = document.querySelector("#kingC");
-kingOfClubsDiv = clubs[11];
-
-aceOfClubsDiv = document.querySelector("#kingC");
-aceOfClubsDiv = clubs[12];
 
 class Spades extends Cards {
     constructor(number, suit) {
@@ -228,60 +106,10 @@ const spades = [twoOfSpades, threeOfSpades, fourOfSpades, fiveOfSpades,
 sixOfSpades, sevenOfSpades, eightOfSpades, nineOfSpades, tenOfSpades,
 jackOfSpades, queenOfSpades, kingOfSpades, aceOfSpades];
 
-twoOfSpadesDiv = document.querySelector("#twoS");
-twoOfSpadesDiv = spades[0];
-
-threeOfSpadesDiv = document.querySelector("#threeS");
-threeOfSpadesDiv = spades[1];
-
-fourOfSpadesDiv = document.querySelector("#fourS");
-fourOfSpadesDiv = spades[2];
-
-fiveOfSpadesDiv = document.querySelector("#fiveS");
-fiveOfSpadesDiv = spades[3];
-
-sixOfSpadesDiv = document.querySelector("#sixS");
-sixOfSpadesDiv = spades[4];
-
-sevenOfSpadesDiv = document.querySelector("#sevenS");
-sevenOfSpadesDiv = spades[5];
-
-eightOfSpadesDiv = document.querySelector("#eightS");
-twoOfSpadesDiv = spades[6];
-
-nineOfSpadesDiv = document.querySelector("#nineS");
-nineOfSpadesDiv = spades[7];
-
-tenOfSpadesDiv = document.querySelector("#tenS");
-tenOfSpadesDiv = spades[8];
-
-jackOfSpadesDiv = document.querySelector("#jackS");
-jackOfSpadesDiv = spades[9];
-
-queenOfSpadesDiv = document.querySelector("#queenS");
-queenOfSpadesDiv = spades[10];
-
-kingOfSpadesDiv = document.querySelector("#kingS");
-kingOfSpadesDiv = spades[11];
-
-aceOfSpadesDiv = document.querySelector("#aceS");
-aceOfSpadesDiv = spades[12];
-
-const reshufflePile = []
-
-function shuffle() {
-    const visibleCard = Math.floor(Math.random() * diamonds.length);
-    reshufflePile.push(visibleCard);
-    console.log(visibleCard);
-    console.log(reshufflePile);
-};
-shuffle();
-
 const oneUpper = document.querySelector("#oneUpper");
 const backPile = document.querySelector("#back");
 
 oneUpper.appendChild(backPile);
-$(backPile).draggable();
 
 const thOne = document.querySelector("#one");
 const backOne = document.querySelector("#backOne");
@@ -318,31 +146,218 @@ const thSeven = document.querySelector("#seven");
 thSeven.appendChild(backSeven);
 $(backSeven).draggable();
 
-const backDiamonds = document.querySelector("#backDiamonds");
+const qS = document.querySelector("#QS");
+$(qS).draggable();
+
+const qH = document.querySelector("#QH");
+$(qH).draggable();
+
+const qD = document.querySelector("#QD");
+$(qD).draggable();
+
+const qC = document.querySelector("#QC");
+$(qC).draggable();
+
+const kS = document.querySelector("#KS");
+$(kS).draggable();
+
+const kH = document.querySelector("#KH");
+$(kH).draggable();
+
+const kD = document.querySelector("#KD");
+$(kD).draggable();
+
+const kC = document.querySelector("#KC");
+$(kC).draggable();
+
+const jS = document.querySelector("#JS");
+$(jS).draggable();
+
+const jH = document.querySelector("#JH");
+$(jH).draggable();
+
+const jD = document.querySelector("#JD");
+$(jD).draggable();
+
+const jC = document.querySelector("#JC");
+$(jC).draggable();
+
+const aS = document.querySelector("#AS");
+$(aS).draggable();
+
+const aH = document.querySelector("#AH");
+$(aH).draggable();
+
+const aD = document.querySelector("#AD");
+$(aD).draggable();
+
+const aC = document.querySelector("#AC");
+$(aC).draggable();
+
+const tenS = document.querySelector("#tenS");
+$(tenS).draggable();
+
+const tenH = document.querySelector("#tenH");
+$(tenH).draggable();
+
+const tenD = document.querySelector("#tenD");
+$(tenD).draggable();
+
+const tenC = document.querySelector("#tenC");
+$(tenC).draggable();
+
+const nineS = document.querySelector("#nineS");
+$(nineS).draggable();
+
+const nineH = document.querySelector("#nineH");
+$(nineH).draggable();
+
+const nineD = document.querySelector("#nineD");
+$(nineD).draggable();
+
+const nineC = document.querySelector("#nineC");
+$(nineC).draggable();
+
+const eightS = document.querySelector("#eightS");
+$(eightS).draggable();
+
+const eightH = document.querySelector("#eightH");
+$(eightH).draggable();
+
+const eightD = document.querySelector("#eightD");
+$(eightD).draggable();
+
+const eightC = document.querySelector("#eightC");
+$(eightC).draggable();
+
+const sevenS = document.querySelector("#sevenS");
+$(sevenS).draggable();
+
+const sevenH = document.querySelector("#sevenH");
+$(sevenH).draggable();
+
+const sevenD = document.querySelector("#sevenD");
+$(sevenD).draggable();
+
+const sevenC = document.querySelector("#sevenC");
+$(sevenC).draggable();
+
+const sixS = document.querySelector("#sixS");
+$(sixS).draggable();
+
+const sixH = document.querySelector("#sixH");
+$(sixH).draggable();
+
+const sixD = document.querySelector("#sixD");
+$(sixD).draggable();
+
+const sixC = document.querySelector("#sixC");
+$(sixC).draggable();
+
+const fiveS = document.querySelector("#fiveS");
+$(fiveS).draggable();
+
+const fiveH = document.querySelector("#fiveH");
+$(fiveH).draggable();
+
+const fiveD = document.querySelector("#fiveD");
+$(fiveD).draggable();
+
+const fiveC = document.querySelector("#fiveC");
+$(fiveC).draggable();
+
+const fourS = document.querySelector("#fourS");
+$(fourS).draggable();
+
+const fourH = document.querySelector("#fourH");
+$(fourH).draggable();
+
+const fourD = document.querySelector("#fourD");
+$(fourD).draggable();
+
+const fourC = document.querySelector("#fourC");
+$(fourC).draggable();
+
+const threeS = document.querySelector("#threeS");
+$(threeS).draggable();
+
+const threeH = document.querySelector("#threeH");
+$(threeH).draggable();
+
+const threeD = document.querySelector("#threeD");
+$(threeD).draggable();
+
+const threeC = document.querySelector("#threeC");
+$(threeC).draggable();
+
+const twoS = document.querySelector("#twoS");
+$(twoS).draggable();
+
+const twoH = document.querySelector("#twoH");
+$(twoH).draggable();
+
+const twoD = document.querySelector("#twoD");
+$(twoD).draggable();
+
+const twoC = document.querySelector("#twoC");
+$(twoC).draggable();
+
+const cornerCard = document.querySelector("#cornerCard");
 const upperSeven = document.querySelector("#sevenUpper")
-upperSeven.appendChild(backDiamonds);
+upperSeven.appendChild(cornerCard);
 
-// const backHearts = document.querySelector("#backHearts");
-// const upperSix = document.querySelector("sixUpper");
-// upperSeven.appendChild(backHearts)
+const cornerCardTwo = document.querySelector("#cornerCardTwo");
+const upperSix = document.querySelector("#sixUpper")
+upperSix.appendChild(cornerCardTwo);
 
 
-    
-//     if (hearts && Cards.class ==='king') {
+const cornerCardThree = document.querySelector("#cornerCardThree");
+const upperFive = document.querySelector("#fiveUpper")
+upperFive.appendChild(cornerCardThree);
 
-//     }
-//     if (hearts && number ===3) {
 
-//     }
-//     if (hearts && number ===5) {
-//     }
-//     if (hearts && number ===5) {
-//     }
-// }
+const cornerCardFour = document.querySelector("#cornerCardFour");
+const upperFour = document.querySelector("#fourUpper")
+upperFour.appendChild(cornerCardFour);
 
-// }
-// function pickCard() {
-// }
+cardImages = [twoC, twoD, twoC, twoH, threeC, threeD, threeH,
+fourC, fourD, fourH, fourS, fiveS, fiveC, fiveD, fiveH, sixC,
+sixD, sixH, sixS, sevenC, sevenD, sevenH, sevenS, eightC, 
+eightD, eightH, eightS, nineC, nineD, nineH, nineS, tenC,
+tenD, tenH, tenS, jS, jC, jD, jH, qC,qD, qH, qS, kS, kD, kC,
+kH]
+
+const reshufflePile = [];
+
+let deck = document.images;
+function displayCard(){
+    let num = Math.floor(Math.random() * cardImages.length); 
+    deck = cardImages[num];
+};
+
+displayCard();
+
+twoUpper = document.querySelector("#twoUpper");
+
+twoUpper.appendChild(deck);
+
+// deal new button
+
+//restart button
+
+// pause button
+
+//replace pause with resume
+
+// make screen turn to paused
+
+
+
+//undo move button
+
+// contained in nav bar?
+
+
 
 
 

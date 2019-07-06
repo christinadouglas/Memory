@@ -8,13 +8,8 @@ h1 {
 table {
     width: 97%;
     height: 500px;
-    border: 2px solid black;
-    background-color: #009900;
+    background-image: url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
 }
-
-/* th {
-    border: 2px solid black;
-} */
 
 #upper {
     height: 175px;
@@ -25,7 +20,21 @@ img {
     height: 180px;
 }
 
-#backpilediv {
-    width: 100px;
-    height: 150px;
+body {
+    background-image: url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
 }
+
+label {
+    font-family: 'Varela', sans-serif;
+    font-family: 'Archivo', sans-serif;
+    padding: 5px;
+    color: white;
+}
+
+span {
+    padding: 5x;
+    font-family: 'Varela', sans-serif;
+    font-family: 'Archivo', sans-serif;
+    color: white;
+}
+
