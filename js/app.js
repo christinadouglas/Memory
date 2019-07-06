@@ -503,6 +503,11 @@ function deckTwentyThree() {
     cardTwentyThree = cardImages[num];
     }
 deckTwentyThree();
+
+function flip() {
+    $(".back").toggleClass(".front")
+}
+flip();
 };
 
 game();
