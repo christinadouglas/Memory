@@ -112,9 +112,6 @@ const backPile = document.querySelector("#back");
 oneUpper.appendChild(backPile);
 
 const thOne = document.querySelector("#one");
-const backOne = document.querySelector("#backOne");
-thOne.appendChild(backOne);
-$(backOne).draggable();
 
 const backTwo = document.querySelector("#backTwo");
 const thTwo = document.querySelector("#two");
@@ -329,17 +326,335 @@ kH]
 
 const reshufflePile = [];
 
-let deck = document.images;
-function displayCard(){
+let cardOne = document.images;
+let cardTwo = document.images;
+let cardThree = document.images;
+let cardFour = document.images;
+let cardFive = document.images;
+let cardSix = document.images;
+let cardSeven = document.images
+let cardEight = document.images;
+let cardEightN = document.images;
+let cardEightNN = document.images;
+let cardNine = document.images;
+let cardTen = document.images;
+let cardEleven = document.images;
+let cardTwelve = document.images;
+let cardThirteen = document.images;
+let cardFourteen = document.images;
+let cardFifteen = document.images;
+let cardSixteen = document.images;
+let cardSeventeen = document.images;
+let cardEighteen = document.images;
+let cardNineteen = document.images;
+let cardTwenty = document.images;
+let cardTwentyOne = document.images;
+let cardTwentyTwo = document.images;
+let cardTwentyThree = document.images;
+
+const game = () => {
+
+function deckOne(){
     let num = Math.floor(Math.random() * cardImages.length); 
-    deck = cardImages[num];
+    cardOne = cardImages[num];
+    };
+deckOne();
+
+function deckTwo(){
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTwo = cardImages[num];
+    };
+deckTwo();
+
+function deckThree(){
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardThree = cardImages[num];
+    };
+deckThree();
+
+function deckFour(){
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardFour = cardImages[num];
+    };
+deckFour();
+
+function deckFive() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardFive = cardImages[num];
+    }
+deckFive();
+
+function deckSix() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardSix = cardImages[num];
+    }
+deckSix();
+
+function deckSeven() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardSeven = cardImages[num];
+    }
+deckSeven();
+
+function deckEight() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardEight = cardImages[num];
+    }
+deckEight();
+
+function deckEightN() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardEightN = cardImages[num];
+    }
+deckEightN();
+
+function deckEightNN() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardEightNN = cardImages[num];
+    }
+deckEightNN();
+
+function deckNine() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardNine = cardImages[num];
+    }
+deckNine();
+
+function deckTen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTen = cardImages[num];
+    }
+deckTen();
+
+function deckEleven() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardEleven = cardImages[num];
+    }
+deckEleven();
+
+function deckTwelve() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTwelve = cardImages[num];
+    }
+deckTwelve();
+
+function deckThirteen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardThirteen = cardImages[num];
+    }
+deckThirteen();
+
+function deckFourteen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardFourteen = cardImages[num];
+    }
+deckFourteen();
+
+function deckFifteen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardFifteen = cardImages[num];
+    }
+deckFifteen();
+
+function deckSixteen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardSixteen = cardImages[num];
+    }
+deckSixteen();
+
+function deckSeventeen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardSeventeen = cardImages[num];
+    }
+deckSeventeen();
+
+function deckEighteen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardEighteen = cardImages[num];
+    }
+deckEighteen();
+
+function deckNineteen() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardNineteen = cardImages[num];
+    }
+deckNineteen();
+
+function deckTwenty() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTwenty = cardImages[num];
+    }
+deckTwenty();
+
+function deckTwentyOne() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTwentyOne = cardImages[num];
+    }
+deckTwentyOne();
+
+function deckTwentyTwo() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTwentyTwo = cardImages[num];
+    }
+deckTwentyTwo();
+
+function deckTwentyThree() {
+    let num = Math.floor(Math.random() * cardImages.length); 
+    cardTwentyThree = cardImages[num];
+    }
+deckTwentyThree();
 };
 
-displayCard();
+game();
 
-twoUpper = document.querySelector("#twoUpper");
+const twoUpper = document.querySelector("#twoUpper");
 
-twoUpper.appendChild(deck);
+twoUpper.appendChild(cardOne);
+
+const divOne = document.createElement("div");
+divOne.id = "divOne"
+
+twoUpper.appendChild(divOne);
+
+const divTwo = document.createElement("div");
+divTwo.id = "divTwo"
+twoUpper.appendChild(divTwo);
+
+const divThree = document.createElement("div");
+divThree.id = "divThree"
+twoUpper.appendChild(divThree);
+
+divOne.appendChild(cardOne);
+divTwo.appendChild(cardTwo);
+divThree.appendChild(cardThree);
+
+thOne.appendChild(cardFour)
+
+const divRowTwo = document.createElement("div");
+divRowTwo.id = "divRowTwo";
+thTwo.appendChild(divRowTwo);
+
+divRowTwo.appendChild(cardFive);
+
+const divRowThree = document.createElement("div");
+divRowThree.id = "divRowThree";
+thThree.appendChild(divRowThree);
+
+divRowThree.appendChild(cardSix);
+
+const divRowThreeN = document.createElement("div");
+divRowThreeN.id = "divRowThreeN";
+thThree.appendChild(divRowThreeN)
+
+divRowThreeN.appendChild(cardSeven);
+
+const divRowFour = document.createElement("div");
+divRowFour.id = "divRowFour";
+thFour.appendChild(divRowFour);
+
+divRowFour.appendChild(cardEight);
+
+const divRowFourN = document.createElement("div");
+divRowFourN.id = "divRowFourN";
+thFour.appendChild(divRowFourN);
+
+divRowFourN.appendChild(cardEightN);
+
+const divRowFourNN = document.createElement("div");
+divRowFourNN.id = "divRowFourNN";
+thFour.appendChild(divRowFourNN);
+
+divRowFourNN.appendChild(cardEightNN);
+
+const divRowFive = document.createElement("div");
+divRowFive.id = "divRowFive";
+thFive.appendChild(divRowFive);
+
+divRowFive.appendChild(cardNine);
+
+const divRowFiveN = document.createElement("div");
+divRowFiveN.id = "divRowFiveN";
+thFive.appendChild(divRowFiveN)
+
+divRowFiveN.appendChild(cardTen);
+
+const divRowFiveNN = document.createElement("div");
+divRowFiveNN.id = "divRowFiveNN";
+thFive.appendChild(divRowFiveNN)
+
+divRowFiveNN.appendChild(cardEleven);
+
+const divRowFiveNNN = document.createElement("div");
+divRowFiveNNN.id = "divRowFiveNNN";
+thFive.appendChild(divRowFiveNNN)
+
+divRowFiveNNN.appendChild(cardTwelve);
+
+const divRowSix = document.createElement("div");
+divRowSix.id = "divRowSix";
+thSix.appendChild(divRowSix);
+
+divRowSix.appendChild(cardThirteen);
+
+const divRowSixN = document.createElement("div");
+divRowSixN.id = "divRowSixN";
+thSix.appendChild(divRowSixN);
+
+divRowSixN.appendChild(cardFourteen);
+
+const divRowSixNN = document.createElement("div");
+divRowSixNN.id = "divRowSixNN";
+thSix.appendChild(divRowSixNN);
+
+divRowSixNN.appendChild(cardFifteen);
+
+const divRowSixNNN = document.createElement("div");
+divRowSixNNN.id = "divRowSixNNN";
+thSix.appendChild(divRowSixNNN);
+
+divRowSixNNN.appendChild(cardSixteen);
+
+const divRowSixNNNN = document.createElement("div");
+divRowSixNNNN.id = "divRowSixNNNN";
+thSix.appendChild(divRowSixNNNN);
+
+divRowSixNNNN.appendChild(cardSeventeen);
+
+const divRowSeven = document.createElement("div");
+divRowSeven.id = "divRowSeven";
+thSeven.appendChild(divRowSeven);
+
+divRowSeven.appendChild(cardEighteen);
+
+const divRowSevenN = document.createElement("div");
+divRowSevenN.id = "divRowSevenN";
+thSeven.appendChild(divRowSevenN);
+
+divRowSevenN.appendChild(cardNineteen);
+
+const divRowSevenNN = document.createElement("div");
+divRowSevenNN.id = "divRowSevenNN";
+thSeven.appendChild(divRowSevenNN);
+
+divRowSevenNN.appendChild(cardTwenty);
+
+const divRowSevenNNN = document.createElement("div");
+divRowSevenNNN.id = "divRowSevenNNN";
+thSeven.appendChild(divRowSevenNNN);
+
+divRowSevenNNN.appendChild(cardTwentyOne);
+
+const divRowSevenNNNN = document.createElement("div");
+divRowSevenNNNN.id = "divRowSevenNNNN";
+thSeven.appendChild(divRowSevenNNNN);
+
+divRowSevenNNNN.appendChild(cardTwentyTwo);
+
+const divRowSevenNNNNN = document.createElement("div");
+divRowSevenNNNNN.id = "divRowSevenNNNNN";
+thSeven.appendChild(divRowSevenNNNNN);
+
+divRowSevenNNNNN.appendChild(cardTwentyThree);
 
 const timerSpan = document.querySelector("#timer");
 
@@ -351,9 +666,9 @@ function countdown() {
     if (msec == 60) {
         sec += 1;
         msec = 00;
-        if (sec == 60) {
-            sec = 00;
-            min += 1;
+    if (sec == 60) {
+        sec = 00;
+        min += 1;
         }
     }
         timerSpan.innerHTML = (`${min}:${sec}:${msec}`)
@@ -365,22 +680,9 @@ function clear() {
 }
 
 
-
-// deal new button
-
-//restart button
-
-// pause button
-
-//replace pause with resume
-
-// make screen turn to paused
-
-
-
-//undo move button
-
-// contained in nav bar?
+// reshuffle button
+const reshuffleButton = document.querySelector("#reshuffle")
+reshuffleButton.addEventListener("click", game.deckOne)
 
 
 
