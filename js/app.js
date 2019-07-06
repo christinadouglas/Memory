@@ -530,131 +530,131 @@ divThree.appendChild(cardThree);
 
 thOne.appendChild(cardFour)
 
-const divRowTwo = document.createElement("div");
-divRowTwo.id = "divRowTwo";
-thTwo.appendChild(divRowTwo);
+// const divRowTwo = document.createElement("div");
+// divRowTwo.id = "divRowTwo";
+// thTwo.appendChild(divRowTwo);
 
-divRowTwo.appendChild(cardFive);
+// divRowTwo.appendChild(cardFive);
 
-const divRowThree = document.createElement("div");
-divRowThree.id = "divRowThree";
-thThree.appendChild(divRowThree);
+// const divRowThree = document.createElement("div");
+// divRowThree.id = "divRowThree";
+// thThree.appendChild(divRowThree);
 
-divRowThree.appendChild(cardSix);
+// divRowThree.appendChild(cardSix);
 
-const divRowThreeN = document.createElement("div");
-divRowThreeN.id = "divRowThreeN";
-thThree.appendChild(divRowThreeN)
+// const divRowThreeN = document.createElement("div");
+// divRowThreeN.id = "divRowThreeN";
+// thThree.appendChild(divRowThreeN)
 
-divRowThreeN.appendChild(cardSeven);
+// divRowThreeN.appendChild(cardSeven);
 
-const divRowFour = document.createElement("div");
-divRowFour.id = "divRowFour";
-thFour.appendChild(divRowFour);
+// const divRowFour = document.createElement("div");
+// divRowFour.id = "divRowFour";
+// thFour.appendChild(divRowFour);
 
-divRowFour.appendChild(cardEight);
+// divRowFour.appendChild(cardEight);
 
-const divRowFourN = document.createElement("div");
-divRowFourN.id = "divRowFourN";
-thFour.appendChild(divRowFourN);
+// const divRowFourN = document.createElement("div");
+// divRowFourN.id = "divRowFourN";
+// thFour.appendChild(divRowFourN);
 
-divRowFourN.appendChild(cardEightN);
+// divRowFourN.appendChild(cardEightN);
 
-const divRowFourNN = document.createElement("div");
-divRowFourNN.id = "divRowFourNN";
-thFour.appendChild(divRowFourNN);
+// const divRowFourNN = document.createElement("div");
+// divRowFourNN.id = "divRowFourNN";
+// thFour.appendChild(divRowFourNN);
 
-divRowFourNN.appendChild(cardEightNN);
+// divRowFourNN.appendChild(cardEightNN);
 
-const divRowFive = document.createElement("div");
-divRowFive.id = "divRowFive";
-thFive.appendChild(divRowFive);
+// const divRowFive = document.createElement("div");
+// divRowFive.id = "divRowFive";
+// thFive.appendChild(divRowFive);
 
-divRowFive.appendChild(cardNine);
+// divRowFive.appendChild(cardNine);
 
-const divRowFiveN = document.createElement("div");
-divRowFiveN.id = "divRowFiveN";
-thFive.appendChild(divRowFiveN)
+// const divRowFiveN = document.createElement("div");
+// divRowFiveN.id = "divRowFiveN";
+// thFive.appendChild(divRowFiveN)
 
-divRowFiveN.appendChild(cardTen);
+// divRowFiveN.appendChild(cardTen);
 
-const divRowFiveNN = document.createElement("div");
-divRowFiveNN.id = "divRowFiveNN";
-thFive.appendChild(divRowFiveNN)
+// const divRowFiveNN = document.createElement("div");
+// divRowFiveNN.id = "divRowFiveNN";
+// thFive.appendChild(divRowFiveNN)
 
-divRowFiveNN.appendChild(cardEleven);
+// divRowFiveNN.appendChild(cardEleven);
 
-const divRowFiveNNN = document.createElement("div");
-divRowFiveNNN.id = "divRowFiveNNN";
-thFive.appendChild(divRowFiveNNN)
+// const divRowFiveNNN = document.createElement("div");
+// divRowFiveNNN.id = "divRowFiveNNN";
+// thFive.appendChild(divRowFiveNNN)
 
-divRowFiveNNN.appendChild(cardTwelve);
+// divRowFiveNNN.appendChild(cardTwelve);
 
-const divRowSix = document.createElement("div");
-divRowSix.id = "divRowSix";
-thSix.appendChild(divRowSix);
+// const divRowSix = document.createElement("div");
+// divRowSix.id = "divRowSix";
+// thSix.appendChild(divRowSix);
 
-divRowSix.appendChild(cardThirteen);
+// divRowSix.appendChild(cardThirteen);
 
-const divRowSixN = document.createElement("div");
-divRowSixN.id = "divRowSixN";
-thSix.appendChild(divRowSixN);
+// const divRowSixN = document.createElement("div");
+// divRowSixN.id = "divRowSixN";
+// thSix.appendChild(divRowSixN);
 
-divRowSixN.appendChild(cardFourteen);
+// // divRowSixN.appendChild(cardFourteen);
 
-const divRowSixNN = document.createElement("div");
-divRowSixNN.id = "divRowSixNN";
-thSix.appendChild(divRowSixNN);
+// const divRowSixNN = document.createElement("div");
+// divRowSixNN.id = "divRowSixNN";
+// thSix.appendChild(divRowSixNN);
 
-divRowSixNN.appendChild(cardFifteen);
+// divRowSixNN.appendChild(cardFifteen);
 
-const divRowSixNNN = document.createElement("div");
-divRowSixNNN.id = "divRowSixNNN";
-thSix.appendChild(divRowSixNNN);
+// const divRowSixNNN = document.createElement("div");
+// divRowSixNNN.id = "divRowSixNNN";
+// thSix.appendChild(divRowSixNNN);
 
-divRowSixNNN.appendChild(cardSixteen);
+// divRowSixNNN.appendChild(cardSixteen);
 
-const divRowSixNNNN = document.createElement("div");
-divRowSixNNNN.id = "divRowSixNNNN";
-thSix.appendChild(divRowSixNNNN);
+// const divRowSixNNNN = document.createElement("div");
+// divRowSixNNNN.id = "divRowSixNNNN";
+// thSix.appendChild(divRowSixNNNN);
 
-divRowSixNNNN.appendChild(cardSeventeen);
+// divRowSixNNNN.appendChild(cardSeventeen);
 
-const divRowSeven = document.createElement("div");
-divRowSeven.id = "divRowSeven";
-thSeven.appendChild(divRowSeven);
+// const divRowSeven = document.createElement("div");
+// divRowSeven.id = "divRowSeven";
+// thSeven.appendChild(divRowSeven);
 
-divRowSeven.appendChild(cardEighteen);
+// divRowSeven.appendChild(cardEighteen);
 
-const divRowSevenN = document.createElement("div");
-divRowSevenN.id = "divRowSevenN";
-thSeven.appendChild(divRowSevenN);
+// const divRowSevenN = document.createElement("div");
+// divRowSevenN.id = "divRowSevenN";
+// thSeven.appendChild(divRowSevenN);
 
-divRowSevenN.appendChild(cardNineteen);
+// divRowSevenN.appendChild(cardNineteen);
 
-const divRowSevenNN = document.createElement("div");
-divRowSevenNN.id = "divRowSevenNN";
-thSeven.appendChild(divRowSevenNN);
+// const divRowSevenNN = document.createElement("div");
+// divRowSevenNN.id = "divRowSevenNN";
+// thSeven.appendChild(divRowSevenNN);
 
-divRowSevenNN.appendChild(cardTwenty);
+// divRowSevenNN.appendChild(cardTwenty);
 
-const divRowSevenNNN = document.createElement("div");
-divRowSevenNNN.id = "divRowSevenNNN";
-thSeven.appendChild(divRowSevenNNN);
+// const divRowSevenNNN = document.createElement("div");
+// divRowSevenNNN.id = "divRowSevenNNN";
+// thSeven.appendChild(divRowSevenNNN);
 
-divRowSevenNNN.appendChild(cardTwentyOne);
+// divRowSevenNNN.appendChild(cardTwentyOne);
 
-const divRowSevenNNNN = document.createElement("div");
-divRowSevenNNNN.id = "divRowSevenNNNN";
-thSeven.appendChild(divRowSevenNNNN);
+// const divRowSevenNNNN = document.createElement("div");
+// divRowSevenNNNN.id = "divRowSevenNNNN";
+// thSeven.appendChild(divRowSevenNNNN);
 
-divRowSevenNNNN.appendChild(cardTwentyTwo);
+// // divRowSevenNNNN.appendChild(cardTwentyTwo);
 
-const divRowSevenNNNNN = document.createElement("div");
-divRowSevenNNNNN.id = "divRowSevenNNNNN";
-thSeven.appendChild(divRowSevenNNNNN);
+// const divRowSevenNNNNN = document.createElement("div");
+// divRowSevenNNNNN.id = "divRowSevenNNNNN";
+// thSeven.appendChild(divRowSevenNNNNN);
 
-divRowSevenNNNNN.appendChild(cardTwentyThree);
+// divRowSevenNNNNN.appendChild(cardTwentyThree);
 
 const timerSpan = document.querySelector("#timer");
 
@@ -684,7 +684,11 @@ function clear() {
 const reshuffleButton = document.querySelector("#reshuffle")
 reshuffleButton.addEventListener("click", game.deckOne)
 
-
-
-
-
+$("#card").flip();
+$("#cardTwo").flip();
+$("#cardThree").flip();
+$("#cardFour").flip();
+$("#cardFive").flip();
+$("#cardSix").flip();
+$("#cardSeven").flip();
+$("#cardEight").flip();

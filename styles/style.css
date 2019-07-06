@@ -239,6 +239,24 @@ nav {
     right: 108px;
 }
 
-button {
-    border-radius: 5px;
+#card {
+    padding: 25px;
+}
+#cardTwo {
+    padding: 25px;
+}
+#cardThree {
+    padding: 25px;
+}
+#cardFour {
+    padding: 25px;
+}
+#cardFive {
+    padding: 25px;
+}
+#cardSix {
+    padding: 25px;
+}
+#cardSeven {
+    padding: 25px;
 }
