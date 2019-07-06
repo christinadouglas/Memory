@@ -341,6 +341,31 @@ twoUpper = document.querySelector("#twoUpper");
 
 twoUpper.appendChild(deck);
 
+const timerSpan = document.querySelector("#timer");
+
+let msec = 00
+let sec = 00;
+let min = 00;
+function countdown() {
+    msec += 1;
+    if (msec == 60) {
+        sec += 1;
+        msec = 00;
+        if (sec == 60) {
+            sec = 00;
+            min += 1;
+        }
+    }
+        timerSpan.innerHTML = (`${min}:${sec}:${msec}`)
+}
+const timer = setInterval(countdown, 1000);
+
+function clear() {
+    clearInterval(timer);
+}
+
+
+
 // deal new button
 
 //restart button
