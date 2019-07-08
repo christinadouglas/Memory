@@ -684,7 +684,7 @@ function clear() {
 // const reshuffleButton = document.querySelector("#reshuffle")
 // reshuffleButton.addEventListener("click", game.deckOne)
 
-$("#cardOne").flip();
+$("#cardUno").flip();
 $("#cardTwo").flip();
 $("#cardThree").flip();
 $("#cardFour").flip();
