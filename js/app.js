@@ -186,6 +186,11 @@ const twoH = $("#cardFifty").flip();
 const twoC = $("#cardFiftyOne").flip();
 const twoD = $("#cardFiftyTwo").flip();
 
+const cards = [twoC, twoD, twoH, twoS, threeC, threeD, threeH, threeS,
+fourC, fourD, fourH, fourS, fiveC, fiveD, fiveH, fiveS, sixC, sixD, sixH,
+sixS, sevenC, sevenD, sevenH, sevenS, eightC, eightD, eightH, eightS, 
+nineC, nineD, nineH, nineS, tenC, tenD, tenH, tenS, jS, jC, jD, jH, qH,
+qS, qD, qC, kC, kH, kD, kC, aC, aD, aH, aS]
 // const game = () => {
 
 // function deck(){
