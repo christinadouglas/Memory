@@ -724,3 +724,7 @@ $("#cardThirtySeven").flip();
 $("#cardThirtyEight").flip();
 $("#cardThirtyNine").flip();
 $("#cardFourty").flip();
+$("#cardFourtyOne").flip();
+$("#cardFourtyTwo").flip();
+$("#cardFourtyThree").flip();
+$("#cardFourtyFour").flip();
