@@ -684,7 +684,7 @@ function clear() {
 // const reshuffleButton = document.querySelector("#reshuffle")
 // reshuffleButton.addEventListener("click", game.deckOne)
 
-$("#card").flip();
+$("#cardOne").flip();
 $("#cardTwo").flip();
 $("#cardThree").flip();
 $("#cardFour").flip();
@@ -728,3 +728,11 @@ $("#cardFourtyOne").flip();
 $("#cardFourtyTwo").flip();
 $("#cardFourtyThree").flip();
 $("#cardFourtyFour").flip();
+$("#cardFourtyFive").flip();
+$("#cardFourtySix").flip();
+$("#cardFourtySeven").flip();
+$("#cardFourtyEight").flip();
+$("#cardFourtyNine").flip();
+$("#cardFifty").flip();
+$("#cardFiftyOne").flip();
+$("#cardFiftyTwo").flip();
