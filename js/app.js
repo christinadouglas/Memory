@@ -42,11 +42,16 @@ let clicks = 0
  $('#board').on('click', (e) => {
     clicks++
     const card = e.target.parentNode.parentNode.className;
-    console.log(card);
+    console.log($(e.target).parent().parent()[0].className)
+    if ($(e.target).parent().parent()[0].className === "match"){
+        clicks = 0
+       return $(e.target).parent().parent().flip(true)
+    }
     if (card === usersCard && clicks === 2) {
         console.log('match!')
         usersCard = null;
-        $(e.target).off(".flip")
+        $(e.target).parent().parent()[0].className = "match"
+        $previous.parent().parent()[0].className = "match"
         clicks = 0
         $previous = null
         previousClass = null
