@@ -12,15 +12,14 @@ const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
             }
             cards.push(card)
         }
-     }
+     };
  };
-
  function addToBoard() {
      makeDeck()
      const board = $('#board')
      for (let i = 0; i < cards.length; i++) {
          const cardDiv = $(`
-            <div id="card">
+            <div id="card" class=${cards[i].number}>
                 <div class='front'>
                     <div class="card back-blue"></div>   
                 </div>
@@ -29,14 +28,25 @@ const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
                 </div>
             </div>
         `)
-
         cardDiv.flip()
-        board.append(cardDiv)
+        board.append(cardDiv);
      }
  };
-
  addToBoard();
-
+ 
+let usersCard = null
+ function getMatch() {
+ $('#board').on('click', (e) => {
+    const card = e.target.parentNode.parentNode.className;
+    console.log(card);
+    if (card === usersCard) {
+        console.log('match!')
+        usersCard = null
+    }
+    usersCard = card
+    })
+ };
+ getMatch();
 
 const timerSpan = document.querySelector("#timer");
 
@@ -64,28 +74,3 @@ function clear() {
 // reshuffle button
 // const reshuffleButton = document.querySelector("#reshuffle")
 // reshuffleButton.addEventListener("click", game.deckOne)
-
-// const game = () => {
-// function deck(){
-//     const tr = $('#rowOne');
-//     const tr2 = $('#secondRow')
-//     for (let i = 0; i < 13; i++) {
-//         const randomCards = Math.floor(Math.random() * cards.length); 
-//         tr.append(cards[i])
-//     }
-//     for (let i = 13; i < 26; i++) {
-//         const randomCards = Math.floor(Math.random() * cards.length); 
-//         tr2.append(cards[i])
-//     }
-// };
-//     deck();
-// }
-// game();
-
-// const values = {
-//     10: '10',
-//     11: 'J',
-//     12: 'Q',
-//     13: 'K',
-//     14: 'A'
-// }
