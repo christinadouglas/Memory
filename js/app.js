@@ -21,29 +21,51 @@ const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
          const cardDiv = $(`
             <div id="card" class=${cards[i].number}>
                 <div class='front'>
-                    <div class="card back-blue"></div>   
+                    <div class="card back-blue ${i}"></div>   
                 </div>
                 <div class='back'>
                     <div class="card ${cards[i].class}"></div>
                 </div>
             </div>
         `)
-        cardDiv.flip()
+        cardDiv.flip();
         board.append(cardDiv);
      }
  };
  addToBoard();
- 
+
 let usersCard = null
+let $previous = null
+let previousClass = null
+let clicks = 0
  function getMatch() {
  $('#board').on('click', (e) => {
+    clicks++
     const card = e.target.parentNode.parentNode.className;
     console.log(card);
-    if (card === usersCard) {
+    if (card === usersCard && clicks === 2) {
         console.log('match!')
-        usersCard = null
+        usersCard = null;
+        $(e.target).off(".flip")
+        clicks = 0
+        $previous = null
+        previousClass = null
+    } else if (card !== usersCard && clicks ===2){
+        console.log('not a match')
+        setTimeout(()=>{
+            $previous.parent().parent().flip(false)
+            $(e.target).parent().parent().flip(false)
+            $previous = null
+            previousClass = null
+        },500)
+        clicks = 0
+    } else {
+        usersCard = card;
+        // console.log($(e.target))
+        previousClass = $(e.target)[0].classList[2]
+        $previous = $(`.${previousClass}`)   
+
     }
-    usersCard = card
     })
  };
  getMatch();

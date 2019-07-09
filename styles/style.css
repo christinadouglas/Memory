@@ -2,11 +2,17 @@
     padding: 25px;
     margin: 25px;
 }
+
 #board {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
+
 body {
     background-color: black;
+}
+
+#timer {
+    color: white;
 }
