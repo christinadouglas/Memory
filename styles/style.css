@@ -1,8 +1,12 @@
 #card { 
-    padding: 20px;
-    display: flex;   
-    flex-wrap: initial;
+    padding: 25px;
+    margin: 25px;
+}
+#board {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 body {
-    background-color: blue
+    background-color: blue;
 }

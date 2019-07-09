@@ -65,27 +65,27 @@ function clear() {
 // const reshuffleButton = document.querySelector("#reshuffle")
 // reshuffleButton.addEventListener("click", game.deckOne)
 
-const game = () => {
-function deck(){
-    const tr = $('#rowOne');
-    const tr2 = $('#secondRow')
-    for (let i = 0; i < 13; i++) {
-        const randomCards = Math.floor(Math.random() * cards.length); 
-        tr.append(cards[i])
-    }
-    for (let i = 13; i < 26; i++) {
-        const randomCards = Math.floor(Math.random() * cards.length); 
-        tr2.append(cards[i])
-    }
-};
-    deck();
-}
-game();
+// const game = () => {
+// function deck(){
+//     const tr = $('#rowOne');
+//     const tr2 = $('#secondRow')
+//     for (let i = 0; i < 13; i++) {
+//         const randomCards = Math.floor(Math.random() * cards.length); 
+//         tr.append(cards[i])
+//     }
+//     for (let i = 13; i < 26; i++) {
+//         const randomCards = Math.floor(Math.random() * cards.length); 
+//         tr2.append(cards[i])
+//     }
+// };
+//     deck();
+// }
+// game();
 
-const values = {
-    10: '10',
-    11: 'J',
-    12: 'Q',
-    13: 'K',
-    14: 'A'
-}
+// const values = {
+//     10: '10',
+//     11: 'J',
+//     12: 'Q',
+//     13: 'K',
+//     14: 'A'
+// }
