@@ -5,7 +5,7 @@ const suits = ['h', 's', 'c', 'd']
 const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
 '08', '09', '10']
 const cards = [];
-const shuffledCards = [];
+let shuffledCards = [];
 
 function makeDeck() {
     for (let i = 0; i < suits.length; i++) {
@@ -16,15 +16,24 @@ function makeDeck() {
                 class: `${suits[i]}${numbers[j]}` 
             }
             cards.push(card);
-            randomCard = Math.floor(Math.random()*cards.length);
-            newRandom = cards[randomCard];
-            shuffledCards.push(newRandom)
+            // randomCard = Math.floor(Math.random()*cards.length);
+            // newRandom = cards[randomCard];
+            // shuffledCards.push(newRandom)
         }
      };
  };
 
+ function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+ }
+
  function addToBoard() {
      makeDeck()
+     shuffledCards = shuffle(cards)
      const board = $('#board')
      for (let i = 0; i < shuffledCards.length; i++) {
         const cardDiv = $(`
