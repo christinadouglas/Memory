@@ -5,7 +5,7 @@ const reshuffleButton = document.querySelector("#reshuffle")
 reshuffleButton.addEventListener("click", makeDeck);
 
 const startButton = document.querySelector("#start")
-startButton.addEventListener("click", addToBoard)
+startButton.addEventListener("click", startGame)
 
 const timerSpan = document.querySelector("#timer");
 
@@ -136,4 +136,7 @@ function clear() {
     clearInterval(time);
 }
 
-
+function startGame() {
+    addToBoard();
+    addToBoard = undefined
+}
