@@ -12,7 +12,11 @@
 body {
     background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')
 }
-
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
 span {
     color: white;
     font-family: 'Fira Sans', sans-serif;
@@ -21,5 +25,9 @@ span {
 label {
     color: white;
     font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+    padding: 4px;
 }
 

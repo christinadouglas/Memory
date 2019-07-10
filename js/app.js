@@ -2,7 +2,12 @@ const difficultyButton = document.querySelector("#difficulty")
 difficultyButton.addEventListener("click", addToBoard);
 
 const reshuffleButton = document.querySelector("#reshuffle")
-reshuffleButton.addEventListener("click", makeDeck);
+reshuffleButton.addEventListener("click", shuffle);
+
+const startButton = document.querySelector("#start")
+startButton.addEventListener("click", timer)
+
+const timerSpan = document.querySelector("#timer");
 
 const score = document.querySelector('#count');
 
@@ -105,7 +110,7 @@ $('#board').on('click', (e) => {
 };
 getMatch();
 
-const timerSpan = document.querySelector("#timer");
+// const timerSpan = document.querySelector("#timer");
 
 let msec = 00
 let sec = 00;
@@ -120,9 +125,13 @@ function countdown() {
         min += 1;
         }
     }
-        timerSpan.innerHTML = (`${min}:${sec}:${msec}`)
+        timerSpan.innerHTML = (`${min}:${sec}:${msec}`);
 }
-const timer = setInterval(countdown, 1000);
+
+function timer() {
+    const timer = setInterval(countdown, 1000);
+    return timer;
+}
 
 function clear() {
     clearInterval(timer);
