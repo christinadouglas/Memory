@@ -41,7 +41,8 @@ function makeDeck() {
  }
  
  function addToBoard() {
-     makeDeck()
+     makeDeck();
+     timer();
      shuffledCards = shuffle(cards)
      const board = $('#board')
      for (let i = 0; i < shuffledCards.length; i++) {
@@ -59,7 +60,6 @@ function makeDeck() {
         board.append(cardDiv);
      }
  };
-// addToBoard();
 
 let newMove = 0;
 let newScore = 0;
@@ -128,12 +128,12 @@ function countdown() {
 }
 
 function timer() {
-    const timer = setInterval(countdown, 1000);
-    return timer;
+    const time = setInterval(countdown, 1000);
+    return time;
 }
 
 function clear() {
-    clearInterval(timer);
+    clearInterval(time);
 }
 
 
