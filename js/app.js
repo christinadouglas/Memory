@@ -1,4 +1,11 @@
+const difficultyButton = document.querySelector("#difficulty")
+difficultyButton.addEventListener("click", addToBoard);
+
+const reshuffleButton = document.querySelector("#reshuffle")
+reshuffleButton.addEventListener("click", makeDeck);
+
 const score = document.querySelector('#count');
+
 const moves = document.querySelector('#moves');
 
 const suits = ['h', 's', 'c', 'd']
@@ -16,9 +23,6 @@ function makeDeck() {
                 class: `${suits[i]}${numbers[j]}` 
             }
             cards.push(card);
-            // randomCard = Math.floor(Math.random()*cards.length);
-            // newRandom = cards[randomCard];
-            // shuffledCards.push(newRandom)
         }
      };
  };
@@ -30,7 +34,7 @@ function makeDeck() {
     }
     return a;
  }
-
+ 
  function addToBoard() {
      makeDeck()
      shuffledCards = shuffle(cards)
@@ -124,7 +128,4 @@ function clear() {
     clearInterval(timer);
 }
 
-// reshuffle button
-// const reshuffleButton = document.querySelector("#reshuffle")
-// reshuffleButton.addEventListener("click", game.deckOne)
 
