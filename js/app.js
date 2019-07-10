@@ -1,3 +1,6 @@
+const score = document.querySelector('#count');
+const moves = document.querySelector('#moves')
+
 const suits = ['h', 's', 'c', 'd']
 const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
  '08', '09', '10']
@@ -33,7 +36,8 @@ const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
      }
  };
  addToBoard();
-
+ 
+let newScore = 0
 let usersCard = null
 let $previous = null
 let previousClass = null
@@ -55,6 +59,8 @@ let clicks = 0
         clicks = 0
         $previous = null
         previousClass = null
+        newScore++
+        score.innerHTML = (`${newScore}`)
     } else if (card !== usersCard && clicks ===2){
         console.log('not a match')
         setTimeout(()=>{
@@ -66,7 +72,6 @@ let clicks = 0
         clicks = 0
     } else {
         usersCard = card;
-        // console.log($(e.target))
         previousClass = $(e.target)[0].classList[2]
         $previous = $(`.${previousClass}`)   
 

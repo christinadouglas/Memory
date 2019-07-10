@@ -13,6 +13,10 @@ body {
     background-color: black;
 }
 
-#timer {
+span {
     color: white;
+}
+
+label {
+    color: white
 }
