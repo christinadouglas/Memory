@@ -10,7 +10,8 @@
 }
 
 body {
-    background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')
+    background: black;
+    /* #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')  */
 }
 h1 {
     text-align: center;

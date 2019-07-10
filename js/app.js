@@ -1,8 +1,8 @@
 const difficultyButton = document.querySelector("#difficulty")
 difficultyButton.addEventListener("click", addToBoard);
 
-const reshuffleButton = document.querySelector("#reshuffle")
-reshuffleButton.addEventListener("click", makeDeck);
+const restartButton = document.querySelector("#restart")
+restartButton.addEventListener("click", restart);
 
 const startButton = document.querySelector("#start")
 startButton.addEventListener("click", startGame)
@@ -110,7 +110,7 @@ $('#board').on('click', (e) => {
 };
 getMatch();
 
-let msec = 00
+let msec = 00;
 let sec = 00;
 let min = 00;
 
@@ -125,18 +125,24 @@ function countdown() {
         }
     }
         timerSpan.innerHTML = (`${min}:${sec}:${msec}`);
-}
+};
 
 function timer() {
     const time = setInterval(countdown, 1000);
     return time;
-}
+};
 
 function clear() {
     clearInterval(time);
-}
+};
 
 function startGame() {
     addToBoard();
     addToBoard = undefined
+};
+
+function restart() {
+   location.reload()
 }
+
+
