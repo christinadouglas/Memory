@@ -2,10 +2,10 @@ const difficultyButton = document.querySelector("#difficulty")
 difficultyButton.addEventListener("click", addToBoard);
 
 const reshuffleButton = document.querySelector("#reshuffle")
-reshuffleButton.addEventListener("click", shuffle);
+reshuffleButton.addEventListener("click", makeDeck);
 
 const startButton = document.querySelector("#start")
-startButton.addEventListener("click", timer)
+startButton.addEventListener("click", addToBoard)
 
 const timerSpan = document.querySelector("#timer");
 
@@ -59,7 +59,7 @@ function makeDeck() {
         board.append(cardDiv);
      }
  };
-addToBoard();
+// addToBoard();
 
 let newMove = 0;
 let newScore = 0;
@@ -110,11 +110,10 @@ $('#board').on('click', (e) => {
 };
 getMatch();
 
-// const timerSpan = document.querySelector("#timer");
-
 let msec = 00
 let sec = 00;
 let min = 00;
+
 function countdown() {
     msec += 1;
     if (msec == 60) {
