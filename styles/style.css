@@ -15,8 +15,15 @@ body {
 
 span {
     color: white;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 label {
-    color: white
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
 }
+
+/* nav {
+    background-color: #696969;
+    opacity: 25%;
+} */

@@ -1,33 +1,39 @@
 const score = document.querySelector('#count');
-const moves = document.querySelector('#moves')
+const moves = document.querySelector('#moves');
 
 const suits = ['h', 's', 'c', 'd']
 const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
- '08', '09', '10']
- const cards = []
- function makeDeck() {
-     for (let i = 0; i < suits.length; i++) {
-        for (let j =0; j < numbers.length; j++) {
+'08', '09', '10']
+const cards = [];
+const shuffledCards = [];
+
+function makeDeck() {
+    for (let i = 0; i < suits.length; i++) {
+        for (let j = 0; j < numbers.length; j++) {
             card = {
                 suit: suits[i], 
                 number: numbers[j],
                 class: `${suits[i]}${numbers[j]}` 
             }
-            cards.push(card)
+            cards.push(card);
+            randomCard = Math.floor(Math.random()*cards.length);
+            newRandom = cards[randomCard];
+            shuffledCards.push(newRandom)
         }
      };
  };
+
  function addToBoard() {
      makeDeck()
      const board = $('#board')
-     for (let i = 0; i < cards.length; i++) {
-         const cardDiv = $(`
-            <div id="card" class=${cards[i].number}>
+     for (let i = 0; i < shuffledCards.length; i++) {
+        const cardDiv = $(`
+            <div id="card" class=${shuffledCards[i].number}>
                 <div class='front'>
                     <div class="card back-blue ${i}"></div>   
                 </div>
                 <div class='back'>
-                    <div class="card ${cards[i].class}"></div>
+                    <div class="card ${shuffledCards[i].class}"></div>
                 </div>
             </div>
         `)
@@ -35,15 +41,17 @@ const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
         board.append(cardDiv);
      }
  };
- addToBoard();
- 
-let newScore = 0
-let usersCard = null
-let $previous = null
-let previousClass = null
-let clicks = 0
- function getMatch() {
- $('#board').on('click', (e) => {
+addToBoard();
+
+let newMove = 0;
+let newScore = 0;
+let usersCard = null;
+let $previous = null;
+let previousClass = null;
+let clicks = 0;
+
+function getMatch() {
+$('#board').on('click', (e) => {
     clicks++
     const card = e.target.parentNode.parentNode.className;
     console.log($(e.target).parent().parent()[0].className)
@@ -60,7 +68,9 @@ let clicks = 0
         $previous = null
         previousClass = null
         newScore++
+        newMove++
         score.innerHTML = (`${newScore}`)
+        moves.innerHTML = (`${newMove}`)
     } else if (card !== usersCard && clicks ===2){
         console.log('not a match')
         setTimeout(()=>{
@@ -68,6 +78,8 @@ let clicks = 0
             $(e.target).parent().parent().flip(false)
             $previous = null
             previousClass = null
+            newMove++
+            moves.innerHTML = (`${newMove}`)
         },500)
         clicks = 0
     } else {
@@ -77,8 +89,8 @@ let clicks = 0
 
     }
     })
- };
- getMatch();
+};
+getMatch();
 
 const timerSpan = document.querySelector("#timer");
 
@@ -106,3 +118,4 @@ function clear() {
 // reshuffle button
 // const reshuffleButton = document.querySelector("#reshuffle")
 // reshuffleButton.addEventListener("click", game.deckOne)
+
