@@ -142,7 +142,55 @@ function startGame() {
 };
 
 function restart() {
-   location.reload()
+   location.reload();
 }
 
+function winner() {
+    if(score ===20) {
+        clear();
+        console.log('winner!')
+    }
+}
 
+function easyMode() {
+    {
+$('#board').on('click', (e) => {
+    clicks++
+    const card = e.target.parentNode.parentNode.className;
+    console.log($(e.target).parent().parent()[0].className)
+    if ($(e.target).parent().parent()[0].className === "match"){
+        clicks = 0
+       return $(e.target).parent().parent().flip(true)
+    }
+    if (card === usersCard && clicks === 2) {
+        console.log('match!')
+        usersCard = null;
+        $(e.target).parent().parent()[0].className = "match"
+        $previous.parent().parent()[0].className = "match"
+        clicks = 0
+        $previous = null
+        previousClass = null
+        newScore++
+        newMove++
+        score.innerHTML = (`${newScore}`)
+        moves.innerHTML = (`${newMove}`)
+    } else if (card !== usersCard && clicks ===2){
+        console.log('not a match')
+        setTimeout(()=>{
+            $previous.parent().parent().flip(false)
+            $(e.target).parent().parent().flip(false)
+            $previous = null
+            previousClass = null
+            newMove++
+            moves.innerHTML = (`${newMove}`)
+        },500)
+        clicks = 0
+    } else {
+        usersCard = card;
+        previousClass = $(e.target)[0].classList[2]
+        $previous = $(`.${previousClass}`)   
+
+    }
+    })
+};
+}

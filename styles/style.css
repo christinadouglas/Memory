@@ -5,9 +5,12 @@
 
 #board {
     margin: auto;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-}
+    max-width: 900px;
+}  
+
 
 body {
     background: black;
@@ -17,6 +20,7 @@ h1 {
     text-align: center;
     color: white;
     font-family: 'Fira Sans', sans-serif;
+    max-width: 900px;
 }
 span {
     color: white;
@@ -28,16 +32,21 @@ label {
     font-family: 'Fira Sans', sans-serif;
 }
 
-nav {
-    padding: 4px;
-}
-
 button {
     background: rgba(0, 0, 0, 0.645);
     border-radius: 5px;
     font-family: 'Fira Sans', sans-serif;
     color: #ffffff;
     font-size: 15px;
-    padding: 5px 10px 5px 10px;
+    /* padding: 5px 10px 5px 10px; */
 }
 
+#buttons {
+    text-align: center;
+    padding: 25px;
+}
+
+#scoreboard {
+    position: absolute;
+    left: 243px;
+}
