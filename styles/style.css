@@ -1,244 +1,52 @@
-h1 {
-    text-align: center;
-    color: red;
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'DM Serif Text', serif;
+#card { 
+    padding: 25px;
+    margin: 25px;
 }
 
-table {
-    width: 97%;
-    height: 500px;
-    background-image: url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
-}
+#board {
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}  
 
-#upper {
-    height: 175px;
-}
-
-img {
-    width: 106px;
-    height: 180px;
-}
 
 body {
-    background-image: url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
+    background: black;
+    /* #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')  */
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    max-width: 900px;
+}
+span {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 label {
-    font-family: 'Varela', sans-serif;
-    font-family: 'Archivo', sans-serif;
-    padding: 5px;
     color: white;
-}
-
-span {
-    padding: 5x;
-    font-family: 'Varela', sans-serif;
-    font-family: 'Archivo', sans-serif;
-    color: white;
-}
-
-#divOne {
-    width: 100px;
-    height: 100px;
-    position:absolute; 
-    top:102px; 
-    left:155px;
-}
-
-#divTwo {
-    width: 100px;
-    height: 100px;
-    position:absolute; 
-    top:102px;
-    left:175px 
-}
-
-#divThree {
-    width: 100px;
-    height: 100px;
-    position:absolute; 
-    top:102px;
-    left:195px 
-}
-
-nav {
-    background-color: black; 
-    width: 100%;
-    height: 75px;
-    opacity: 0.3;
-}
-
-
-#divRowTwo {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 375px;
-    left: 156px;
-}
-
-#divRowThree {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 375px;
-    left: 289px;
-}
-
-#divRowThreeN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 404px;
-    left: 289px;
-}
-
-#divRowFour {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 375px;
-    left: 422px;
-}
-
-#divRowFourN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 404px;
-    left: 422px;
-}
-
-#divRowFourNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 432px;
-    left: 422px;
-}
-
-#divRowFive {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 375px;
-    right: 376px;
-}
-
-#divRowFiveN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 404px;
-    right: 376px;
-}
-
-#divRowFiveNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 432px;
-    right: 376px;
-}
-
-#divRowFiveNNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 460px;
-    right: 376px;
-}
-
-#divRowSix {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 375px;
-    right: 242px;
-}
-
-#divRowSixN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 404px;
-    right: 242px;
-}
-
-
-#divRowSixNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 432px;
-    right: 242px;
-}
-
-#divRowSixNNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 460px;
-    right: 242px;
-}
-
-#divRowSixNNNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 488px;
-    right: 242px;
-}
-
-#divRowSeven {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 375px;
-    right: 108px;
-}
-
-#divRowSevenN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 404px;
-    right: 108px;
-}
-
-#divRowSevenNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 432px;
-    right: 108px;
-}
-
-#divRowSevenNNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 460px;
-    right: 108px;
-}
-
-#divRowSevenNNNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 488px;
-    right: 108px;
-}
-
-#divRowSevenNNNNN {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 516px;
-    right: 108px;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 button {
+    background: rgba(0, 0, 0, 0.645);
     border-radius: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    /* padding: 5px 10px 5px 10px; */
+}
+
+#buttons {
+    text-align: center;
+    padding: 25px;
+}
+
+#scoreboard {
+    position: absolute;
+    left: 243px;
 }
