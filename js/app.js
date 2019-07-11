@@ -9,18 +9,6 @@ startButton.addEventListener("click", startGame)
 
 const timerSpan = document.querySelector("#timer");
 
-<<<<<<< HEAD
-function deckTwentyThree() {
-    let num = Math.floor(Math.random() * cardImages.length); 
-    cardTwentyThree = cardImages[num];
-    }
-deckTwentyThree();
-
-function flip() {
-    $(".back").toggleClass(".front")
-}
-flip();
-=======
 const score = document.querySelector('#count');
 
 const moves = document.querySelector('#moves');
@@ -119,7 +107,6 @@ $('#board').on('click', (e) => {
 
     }
     })
->>>>>>> working
 };
 getMatch();
 
