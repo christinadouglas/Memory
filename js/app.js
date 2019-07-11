@@ -13,6 +13,9 @@ const score = document.querySelector('#count');
 
 const moves = document.querySelector('#moves');
 
+const scoreboard = document.querySelector('#scoreboard')
+scoreboard.style.visibility = 'hidden'
+
 const suits = ['h', 's', 'c', 'd']
 const numbers = ['A', 'J', 'Q', 'K', '02', '03', '04', '05', '06', '07',
 '08', '09', '10']
@@ -137,8 +140,9 @@ function clear() {
 };
 
 function startGame() {
+    scoreboard.style.visibility = 'visible';
     addToBoard();
-    addToBoard = undefined
+    addToBoard = undefined;
 };
 
 function restart() {
