@@ -152,7 +152,9 @@ function restart() {
 function winner() {
     if(score ===20) {
         clear();
-        console.log('winner!')
+        const winner = confirm("Winner!")
     }
 }
+winner();
+
 
