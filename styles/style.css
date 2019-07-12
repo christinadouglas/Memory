@@ -1,10 +1,10 @@
 h1 {
     position: relative;
-    left: 155px;
     font-size: 70px;
     padding: 15px;
-    font-weight: bold;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Wendy One', sans-serif;
+    text-align: center;
+    color: white;
 }
 
 img {
@@ -12,8 +12,15 @@ img {
     width: 100px;
     position: absolute;
     top: 15px;
-    right: 445px;
+    right: 383px;
 }
+
+/* #image {
+    position: relative;
+    text-align: center;
+    top: -100px;
+    right: -200px
+} */
 
 #card { 
     padding: 25px;
@@ -28,38 +35,33 @@ img {
     max-width: 900px;
 }  
 
-
 body {
-    background: black;
-    /* #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')  */
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);   
 }
-h1 {
-    text-align: center;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    max-width: 900px;
-}
+
 span {
     color: white;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 label {
     color: white;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
     background: rgba(0, 0, 0, 0.645);
     border-radius: 5px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 15px;
 }
 
 #buttons {
     text-align: center;
-    padding: 25px;
+    padding: 15px 0px 15px 0px;
 }
 
 #scoreboard {
