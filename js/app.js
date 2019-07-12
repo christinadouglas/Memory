@@ -45,7 +45,6 @@ function makeDeck() {
  
  function addToBoard() {
      makeDeck();
-     timer();
      shuffledCards = shuffle(cards)
      const board = $('#board')
      for (let i = 0; i < shuffledCards.length; i++) {
@@ -65,23 +64,21 @@ function makeDeck() {
  };
 
 let newMove = 0;
-let newScore = 0;
 let usersCard = null;
 let $previous = null;
 let previousClass = null;
 let clicks = 0;
+let newScore = 0;
 
 function getMatch() {
 $('#board').on('click', (e) => {
     clicks++
     const card = e.target.parentNode.parentNode.className;
-    console.log($(e.target).parent().parent()[0].className)
     if ($(e.target).parent().parent()[0].className === "match"){
         clicks = 0
        return $(e.target).parent().parent().flip(true)
     }
     if (card === usersCard && clicks === 2) {
-        console.log('match!')
         usersCard = null;
         $(e.target).parent().parent()[0].className = "match"
         $previous.parent().parent()[0].className = "match"
@@ -91,9 +88,8 @@ $('#board').on('click', (e) => {
         newScore++
         newMove++
         score.innerHTML = (`${newScore}`)
-        moves.innerHTML = (`${newMove}`)
+        moves.innerHTML = (`${newMove}`);
     } else if (card !== usersCard && clicks ===2){
-        console.log('not a match')
         setTimeout(()=>{
             $previous.parent().parent().flip(false)
             $(e.target).parent().parent().flip(false)
@@ -107,7 +103,6 @@ $('#board').on('click', (e) => {
         usersCard = card;
         previousClass = $(e.target)[0].classList[2]
         $previous = $(`.${previousClass}`)   
-
     }
     })
 };
@@ -127,12 +122,13 @@ function countdown() {
         min += 1;
         }
     }
-        timerSpan.innerHTML = (`${min}:${sec}:${msec}`);
+    timerSpan.innerHTML = (`${min}:${sec}:${msec}`);
 };
 
+let time;
+
 function timer() {
-    const time = setInterval(countdown, 1000);
-    return time;
+    time = setInterval(countdown, 1000);
 };
 
 function clear() {
@@ -141,20 +137,20 @@ function clear() {
 
 function startGame() {
     scoreboard.style.visibility = 'visible';
+    timer();
     addToBoard();
     addToBoard = undefined;
 };
 
 function restart() {
    location.reload();
-}
+};
 
 function winner() {
-    if(score ===20) {
-        clear();
-        const winner = confirm("Winner!")
+if(newScore===26) {
+    clear(time);
+    const win = confirm("Winner!");
     }
 }
 winner();
-
 
